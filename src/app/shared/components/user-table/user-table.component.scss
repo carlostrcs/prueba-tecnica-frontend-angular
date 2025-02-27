@@ -1,0 +1,18 @@
+table{
+  @apply border-collapse border border-gray-400;
+
+  thead{
+    @apply border-collapse border border-gray-400;
+  };
+
+  tr{
+    @apply border-collapse border border-gray-400;
+  };
+
+  th{
+    @apply border-collapse border border-gray-400 font-bold uppercase;
+  };
+  td{
+    @apply border-collapse border border-gray-400;
+  };
+}
