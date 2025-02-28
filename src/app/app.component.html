@@ -1,11 +1,11 @@
 <div class="container mx-auto px-4">
   <h1 class="text-2xl sm:text-4xl font-semibold text-center py-4">Listado de Usuarios</h1>
   <div class="flex flex-col sm:flex-row justify-center gap-4 mb-4">
-    <button class="bg-blue-500 text-white px-4 py-2 rounded"
+    <button data-testid="add-button" class="bg-blue-500 text-white px-4 py-2 rounded"
             (click)="showModal()">
       Añadir
     </button>
-    <button class="bg-blue-500 text-white px-4 py-2 rounded"
+    <button data-testid="restore-button" class="bg-blue-500 text-white px-4 py-2 rounded"
             (click)="restoreUsers()">
       Restaurar
     </button>
