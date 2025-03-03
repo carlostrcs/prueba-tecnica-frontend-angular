@@ -68,11 +68,11 @@ The build artifacts will be stored in the dist/ directory.
 
 - End-to-End Tests
   To run e2e tests via Playwright:
-  # Make sure the application is running in another terminal
+  ## Make sure the application is running in another terminal
   ```bash
   npm start
   ```
-  # In a separate terminal
+  ## In a separate terminal
   ```bash
   npm run test:e2e
   ```
@@ -81,7 +81,7 @@ The build artifacts will be stored in the dist/ directory.
   ```bash
   npx playwright show-report src/test/e2e/playwright-report
   ```
-## Project Structure
+# Project Structure
 ```
 src/
 ├── app/
