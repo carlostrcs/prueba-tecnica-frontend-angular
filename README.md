@@ -33,7 +33,7 @@ Before running this application, make sure you have the following installed:
 1. Clone the repository
 ```bash
 git clone https://github.com/carlostrcs/prueba-tecnica-frontend-angular.git
-cd prueba-frontend-angular
+cd prueba-tecnica-frontend-angular
 ```
 
 2. Install dependencies
