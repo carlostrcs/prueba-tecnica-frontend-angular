@@ -1,59 +1,85 @@
-# PruebaFrontendAngular
+# User Management Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+A responsive Angular application for managing user data fetched from the RandomUser API. This application allows users to view, add, edit, and delete user information.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Fetch and display 100 users from the RandomUser API
+- View user details including profile image, full name, email, and country
+- Add new users to the list
+- Edit existing user information
+- Delete users from the list
+- Restore original user list
+- Responsive design for all device sizes
+- Comprehensive test suite (unit and e2e)
 
-```bash
-ng serve
-```
+## Technologies Used
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Angular 19
+- TypeScript
+- Tailwind CSS
+- Jasmine/Karma (unit testing)
+- Playwright (e2e testing)
 
-## Code scaffolding
+## Prerequisites
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Before running this application, make sure you have the following installed:
 
-```bash
-ng generate component component-name
-```
+- Node.js (v16.x or later)
+- npm (v8.x or later)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Installation
 
-```bash
-ng generate --help
-```
+1. Clone the repository
 
-## Building
+git clone https://github.com/carlostrcs/prueba-tecnica-frontend-angular.git
+cd prueba-frontend-angular
 
-To build the project run:
+2. Install dependencies
 
-```bash
-ng build
-```
+npm install
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Running the Application
+To start the development server:
 
-## Running unit tests
+npm start
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Then navigate to http://localhost:4200/ in your browser. The application will automatically reload if you change any of the source files.
 
-```bash
-ng test
-```
+## Building for Production
+To build the application for production:
 
-## Running end-to-end tests
+npm run build
 
-For end-to-end (e2e) testing, run:
+The build artifacts will be stored in the dist/ directory.
 
-```bash
-ng e2e
-```
+## Running Tests
+- Unit Tests
+  To run unit tests via Karma:
+    npm run test:unit
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+  To generate a coverage report:
+    npm run test:coverage
+    Coverage reports can be found in the src/test/unit/coverage directory.
 
-## Additional Resources
+- End-to-End Tests
+  To run e2e tests via Playwright:
+  # Make sure the application is running in another terminal
+  npm start
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+  # In a separate terminal
+  npm run test:e2e
+
+  To view the Playwright test report:
+  npx playwright show-report src/test/e2e/playwright-report
+
+## Project Structure
+src/
+├── app/
+│   ├── core/                 # Core functionality used across the app
+│   │   ├── models/           # Data models and interfaces
+│   │   └── services/         # Application-wide services
+│   ├── shared/               # Shared components, directives, and pipes
+│   │   └── components/       # Reusable components
+│   └── app.component.*       # Main application component
+└── test/                     # Test reports and e2e tests
